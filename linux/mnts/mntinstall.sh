@@ -6,9 +6,9 @@ user=$(whoami)
 
 if [ -d "/mnt/shared" ]; then
 	mkdir "/mnt/shared"
-	if [ -d "/mnt/shared/install" ]; then
-		mkdir "/mnt/shared/install"
-	fi
+fi
+if [ -d "/mnt/shared/install" ]; then
+	mkdir "/mnt/shared/install"
 fi
 
 sudo apt-get update # update repos
