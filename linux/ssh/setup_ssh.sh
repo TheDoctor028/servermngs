@@ -15,6 +15,7 @@ sudo systemctl enable ufw
 
 # Set up fire wall
 
-ufw allow 22
+sudo ufw enable
+sudo ufw allow 22
 
 
