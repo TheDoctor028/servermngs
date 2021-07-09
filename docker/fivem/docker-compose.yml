@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  fivem:
+    image: spritsail/fivem
+    container_name: fivem
+    restart: always
+    stdin_open: true
+    tty: true
+    volumes:
+      - "/config:/config"
+    ports:
+      - "30120:30120"
+      - "30120:30120/udp"
+    environment:
+      LICENSE_KEY: "cfxk_oKD1w2Xk9JZyYKfq6G8M_21Unr0"
